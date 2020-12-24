@@ -40,7 +40,7 @@ h4 {
 
 .up-lift{
   position: relative;
-  bottom: 300px;
+  bottom: 18.5em;
 }
 
 .evaluation{
@@ -52,12 +52,49 @@ h4 {
   padding: 2em 4em;
 }
 
-.radio{
-  width: auto;
-}
-
 .chart{
   padding-top: 50px;
-  width: 416.388px;
   text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    position: relative;
+}
+
+.rating > label {
+
+    position: relative;
+    cursor: pointer;
+    color: #000;
+    font-size: 25px;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
 }
